@@ -2,6 +2,7 @@ import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
+  distDir: 'dist',
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -35,7 +36,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'https,',
         hostname: 'images.wallpapersden.com',
         port: '',
         pathname: '/**',
