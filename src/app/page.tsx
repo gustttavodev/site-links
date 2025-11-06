@@ -22,8 +22,8 @@ export default function Home() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block overflow-hidden rounded-lg border-2 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-offset-background ${
-                    index === 0 ? 'animate-pulse' : ''
+                  className={`relative block overflow-hidden rounded-lg border-2 shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 focus:scale-105 focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-offset-background ${
+                    index === 0 ? 'animate-slow-pulse' : ''
                   }`}
                   style={
                     {
@@ -41,6 +41,11 @@ export default function Home() {
                     className="h-auto w-full"
                     priority={index === 0}
                   />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+                    <h2 className="text-center text-xl font-bold text-white">
+                      {link.title}
+                    </h2>
+                  </div>
                 </a>
               ))}
             </div>
