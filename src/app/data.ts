@@ -13,10 +13,10 @@ export const links: Link[] = [
     borderColor: '#FF2A2A',
   },
   {
-    title: '60 dinâmicas prontas de leitura e escrita',
-    url: 'https://dinamicasinterativas.fun/',
-    image: 'https://i.imgur.com/RuJEdzj.png',
-    borderColor: '#FFD700',
+    title: 'Leitura Mágica',
+    url: 'https://leituramagica.site',
+    image: 'https://i.imgur.com/reDVmL7.png',
+    borderColor: '#9B59B6',
   },
 ];
 
